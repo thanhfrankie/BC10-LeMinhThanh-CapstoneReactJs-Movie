@@ -44,9 +44,9 @@ const ListMovie = () => {
             <div key={index}>
               <div className="grid grid-cols-3 gap-10">
                 {chunk.map((movie) => (
-                  <div className="carousel_banner" key={movie.maPhim}>
+                  <div key={movie.maPhim}>
                     <div className="movie_item space-y-4">
-                      <img
+                      {/* <img
                         className="w-full h-96 object-cover rounded"
                         src={movie.hinhAnh}
                         alt=""
@@ -61,6 +61,30 @@ const ListMovie = () => {
                           </span>
                         </h3>
                         <p className="line-clamp-2">{movie.moTa}</p>
+                      </div> */}
+                      <div className="movie_content">
+                        <div>
+                          <img
+                            className=" img_content w-full h-96 object-cover rounded mt-3 mb-5 "
+                            src={movie.hinhAnh}
+                            alt=""
+                          />
+                          <div>
+                            <span></span>
+                          </div>
+                        </div>
+                        <h3>
+                          <span className="bg-orange-500 text-white rounded py-1 px-2 text-lg font-semibold mr-3">
+                            C18
+                          </span>
+                          <span className="text-xl font-semibold">
+                            {movie.tenPhim}
+                          </span>
+                        </h3>
+                        <p className="line-clamp-2">{movie.moTa}</p>
+                      </div>
+                      <div className="btn_button">
+                        <button>Mua Vé</button>
                       </div>
                     </div>
                   </div>
