@@ -11,7 +11,7 @@ const HomePage = () => {
       {/* banner  */}
       <Banner />
       {/* list movie  */}
-      <div className="container">
+      <div className="container mt-3">
         <ListMovie />
       </div>
       {/* footer  */}

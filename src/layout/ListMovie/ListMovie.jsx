@@ -11,8 +11,8 @@ const ListMovie = () => {
       .then((res) => {
         const movies = res.data.content;
         const chunks = [];
-        for (let i = 0; i < movies.length; i += 6) {
-          chunks.push(movies.slice(i, i + 6));
+        for (let i = 0; i < movies.length; i += 3) {
+          chunks.push(movies.slice(i, i + 3));
         }
         setArrMovie(chunks);
       })
