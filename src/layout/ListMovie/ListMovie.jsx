@@ -3,7 +3,7 @@ import { quanLyPhimServ } from "../../services/quanLyPhim";
 import { Carousel } from "antd";
 import "./listMovie.scss";
 const ListMovie = () => {
-  const [arrMovieChunks, setArrMovieChunks] = useState([]);
+  const [arrMovie, setArrMovie] = useState([]);
 
   useEffect(() => {
     quanLyPhimServ
@@ -14,7 +14,7 @@ const ListMovie = () => {
         for (let i = 0; i < movies.length; i += 6) {
           chunks.push(movies.slice(i, i + 6));
         }
-        setArrMovieChunks(chunks);
+        setArrMovie(chunks);
       })
       .catch((err) => {
         console.log(err);
@@ -39,7 +39,7 @@ const ListMovie = () => {
           </div>
         }
       >
-        {arrMovieChunks.map((chunk, index) => (
+        {arrMovie.map((chunk, index) => (
           <div className="listMovie">
             <div key={index}>
               <div className="grid grid-cols-3 gap-10">
