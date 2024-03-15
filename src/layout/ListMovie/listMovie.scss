@@ -1,7 +1,7 @@
-.carousel_banner {
+.listMovie {
   .slick-next {
     right: 30px;
-    color: white;
+    color: black;
     font-size: 16px;
 
     &::before {
@@ -11,15 +11,19 @@
 
   .slick-prev {
     left: 30px;
-    color: white;
+    color: black;
     font-size: 16px;
     z-index: 2;
 
     &::before {
       display: none;
     }
-  }
-  .slick-dots {
-    z-index: 3;
+    .slick-dots-bottom {
+      color: black;
+      z-index: 12;
+      &::after {
+        // display: none;
+      }
+    }
   }
 }

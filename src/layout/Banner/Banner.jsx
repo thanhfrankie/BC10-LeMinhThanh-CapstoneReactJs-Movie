@@ -31,8 +31,16 @@ const Banner = () => {
   return (
     <div className="carousel_banner">
       <Carousel
-        nextArrow={<div>Hello</div>}
-        prevArrow={<div>Bye</div>}
+        nextArrow={
+          <div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        }
+        prevArrow={
+          <div>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+        }
         arrows={true}
         afterChange={onChange}
       >
