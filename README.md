@@ -12,3 +12,4 @@ câu hỏi:
 1. làm hiệu ứng loading cho từng item như Youtube
 2. carousel hoặc cuộn chuột sẽ getdata của 1 đoạn tiếp theo của array item
 3. thêm giỏ hàng, thanh toán cho những ô checkbox đã check
+4. Lấy giá trị của q trên thanh url khi enter thanh tìm kiếm
